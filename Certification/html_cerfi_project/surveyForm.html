@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">Restaurant Survey</h1>
+        <p id="description">Please take a moment to share your experience with our restaurant.</p>
+        <form id="survey-form">
+        <label id="name-label" for="name" >Name</label>
+        <input id="name" type="text" placeholder="Enter your name"required> 
+        <label id="email-label" for="email" >Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <label id="number-label" for="number" >Age</label>
+        <input id="number" type="number" min="10" max="100" placeholder="Enter your age" required>
+
+        <label for="dropdown">How often do you visit our restaurant?</label>
+        <select id="dropdown">
+            <option value="often">Often</option>
+            <option value="sometimes">Sometimes</option>
+        </select>
+
+        <p>Would you recommend our restaurant?</p>
+        <label for="dropdown">Yes<input type="radio" name="recommend" value="yes"></label>
+
+        <label for="dropdown">No<input type="radio" name="recommend" value="no"></label>
+
+        <p>What did you like? (Select all that apply)</p>
+        <label>
+            <input type="checkbox" value="food">Food
+        </label>
+
+        <label>
+            <input type="checkbox" value="service">Service
+        </label>
+
+        <label>
+            <input type="checkbox" value="ambience">Ambience
+        </label>
+        
+        
+        <textarea id="comments"
+        name="comments"
+        placeholder="Enter your comments here"
+        ></textarea>
+        
+        
+
+        <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
